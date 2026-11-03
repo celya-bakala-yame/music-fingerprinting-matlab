@@ -1,0 +1,7 @@
+*.wav
+*.mp3
+*.flac
+results/indexes/*.mat
+*.asv
+*.mlapp~
+presentation/*.mp4
