@@ -31,23 +31,18 @@ function testKnownOffset(testCase)
     % Ensemble des correspondances : [song_id, m_ref, m_query]
     matches = [trueMatches; noiseMatches];
 
-    % Calcul du decalage temporel de chaque correspondance
-    offsets = matches(:, 2) - matches(:, 3);
+    
+    % Appeler notre fonction de reconnaissance
+    addpath(fullfile(fileparts(mfilename('fullpath')), '..', 'src'));
 
-    % Comptage des votes par morceau et decalage
-    [groups, songIds, detectedOffsets] = findgroups( ...
-        matches(:, 1), offsets);
+    [detectedSong, detectedOffset, bestVotes] = match_audio(matches);
 
-    votes = splitapply(@numel, offsets, groups);
-
-    % Selection du groupe ayant le plus de votes
-    [~, bestGroup] = max(votes);
-
-    detectedSong = songIds(bestGroup);
-    detectedOffset = detectedOffsets(bestGroup);
-
-    % Verifications automatiques
+    % Verifier que le bon morceau est reconnu
     verifyEqual(testCase, detectedSong, targetSong);
+
+    % Verifier que le decalage temporel est correct
     verifyEqual(testCase, detectedOffset, trueOffset);
-    verifyGreaterThanOrEqual(testCase, votes(bestGroup), nTrue);
+
+    % Verifier que les 200 correspondances sont retrouvees
+    verifyGreaterThanOrEqual(testCase, bestVotes, nTrue);
 end
