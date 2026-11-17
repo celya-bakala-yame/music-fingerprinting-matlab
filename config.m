@@ -1,3 +1,4 @@
+
 function cfg = config()
 %CONFIG Paramètres communs du système de reconnaissance musicale.
 
@@ -8,7 +9,8 @@ cfg.Fs = 8000;
 cfg.N = 1024;
 cfg.H = 512;
 cfg.Nfft = 1024;
-cfg.win = hann(cfg.N, 'periodic');
+n = (0:cfg.N-1)';
+cfg.win = 0.5 - 0.5*cos(2*pi*n/cfg.N);
 
 % Détection des pics
 cfg.peaks.dm = 3;
