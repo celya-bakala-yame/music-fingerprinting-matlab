@@ -1,48 +1,84 @@
 
 function tests = test_alignment
-%TEST_ALIGNMENT Tests avec des correspondances synthetiques.
+% Tests unitaires de l'alignement temporel
 tests = functiontests(localfunctions);
 end
 
-function testKnownOffset(testCase)
-    % Reproductibilite
-    rng(1);
+function setupOnce(testCase)
+projectRoot = fileparts(fileparts(mfilename('fullpath')));
+addpath(fullfile(projectRoot, 'src'));
+addpath(projectRoot);
+end
 
-    % Parametres du scenario
-    targetSong = 2;
-    trueOffset = 40;
-    nTrue = 200;
-    nNoise = 600;
+function testBestSong(testCase)
+matches = createSyntheticMatches();
+res = match_audio(matches);
 
-    % 200 correspondances correctes pour le morceau 2
-    mQuery = randi([1, 500], nTrue, 1);
-    mRef = mQuery + trueOffset;
+verifyEqual(testCase, res.song_id(1), 2);
+end
 
-    trueMatches = [ ...
-        repmat(targetSong, nTrue, 1), mRef, mQuery];
+function testBestOffset(testCase)
+matches = createSyntheticMatches();
+res = match_audio(matches);
 
-    % 600 correspondances aleatoires parasites
-    noiseSongs = randi([1, 3], nNoise, 1);
-    noiseRef = randi([1, 1000], nNoise, 1);
-    noiseQuery = randi([1, 500], nNoise, 1);
+verifyEqual(testCase, res.delta(1), 40);
+end
 
-    noiseMatches = [noiseSongs, noiseRef, noiseQuery];
+function testScore(testCase)
+matches = createSyntheticMatches();
+res = match_audio(matches);
 
-    % Ensemble des correspondances : [song_id, m_ref, m_query]
-    matches = [trueMatches; noiseMatches];
+verifyGreaterThanOrEqual(testCase, res.score(1), 200);
+end
 
-    
-    % Appeler notre fonction de reconnaissance
-    addpath(fullfile(fileparts(mfilename('fullpath')), '..', 'src'));
+function testUnknownSong(testCase)
+matches = createSyntheticMatches();
+res = match_audio(matches);
 
-    [detectedSong, detectedOffset, bestVotes] = match_audio(matches);
+cfg = config();
+cfg.decision.threshold = res.score(1) + 1;
 
-    % Verifier que le bon morceau est reconnu
-    verifyEqual(testCase, detectedSong, targetSong);
+index = struct();
+result = classify_match(res, index, cfg);
 
-    % Verifier que le decalage temporel est correct
-    verifyEqual(testCase, detectedOffset, trueOffset);
+verifyFalse(testCase, result.is_known);
+verifyEqual(testCase, result.song_id, 0);
+verifyEqual(testCase, result.title, "inconnu");
+end
 
-    % Verifier que les 200 correspondances sont retrouvees
-    verifyGreaterThanOrEqual(testCase, bestVotes, nTrue);
+function testNoiseOnly(testCase)
+rng(2026);
+
+% Correspondances aleatoires dispersees
+n = 300;
+song = randi(3, n, 1);
+mRef = randi(10000, n, 1);
+mQuery = randi(10000, n, 1);
+
+matches = [song, mRef, mQuery];
+res = match_audio(matches);
+
+% Les votes doivent rester disperses.
+verifyLessThan(testCase, res.score(1), 10);
+end
+
+function matches = createSyntheticMatches()
+rng(1);
+
+% 200 correspondances correctes du morceau 2
+mQuery = (1:200)';
+mRef = mQuery + 40;
+
+correctMatches = [ ...
+    2 * ones(200,1), mRef, mQuery];
+
+% 600 correspondances parasites
+n = 600;
+noiseSong = randi(3, n, 1);
+noiseRef = randi(10000, n, 1);
+noiseQuery = randi(10000, n, 1);
+
+noiseMatches = [noiseSong, noiseRef, noiseQuery];
+
+matches = [correctMatches; noiseMatches];
 end

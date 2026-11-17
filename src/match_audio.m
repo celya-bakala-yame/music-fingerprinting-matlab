@@ -1,37 +1,59 @@
 
-function [bestSong, bestOffset, bestVotes] = match_audio(matches)
-%MATCH_AUDIO Identifie le morceau par vote temporel.
-%
-% Entree :
-%   matches : matrice K x 3
-%             [song_id, m_ref, m_query]
-%
-% Sorties :
-%   bestSong   : identifiant du morceau reconnu
-%   bestOffset : decalage temporel en trames
-%   bestVotes  : nombre de votes du meilleur groupe
+function res = match_audio(matches)
+%MATCH_AUDIO Classe les morceaux par alignement temporel.
+% matches : Kx3 [song_id, m_ref, m_query]
 
-    % Cas sans correspondance
-    if isempty(matches)
-        bestSong = NaN;
-        bestOffset = NaN;
-        bestVotes = 0;
-        return;
-    end
+% Initialisation du resultat
+res.song_id = [];
+res.score = [];
+res.delta = [];
+res.score2 = 0;
+res.delta_all = [];
+res.song_all = [];
 
-    % Calculer les decalages temporels
-    offsets = matches(:, 2) - matches(:, 3);
+if isempty(matches)
+    return;
+end
 
-    % Regrouper les correspondances par morceau et decalage
-    [groups, songIds, detectedOffsets] = findgroups( ...
-        matches(:, 1), offsets);
+% 1. Calcul des decalages temporels
+delta = matches(:,2) - matches(:,3);
+song = matches(:,1);
 
-    % Compter les votes de chaque groupe
-    votes = splitapply(@numel, offsets, groups);
+res.delta_all = delta;
+res.song_all = song;
 
-    % Identifier le groupe ayant le plus de votes
-    [bestVotes, bestGroup] = max(votes);
+% 2. Regroupement par morceau et decalage
+[groups, ~, ic] = unique([song, delta], 'rows');
 
-    bestSong = songIds(bestGroup);
-    bestOffset = detectedOffsets(bestGroup);
+% 3. Nombre de votes pour chaque couple
+votes = accumarray(ic, 1);
+
+% 4. Recherche du meilleur decalage par morceau
+songIds = unique(song);
+nSongs = numel(songIds);
+
+scores = zeros(nSongs, 1);
+bestDeltas = zeros(nSongs, 1);
+
+for i = 1:nSongs
+    mask = groups(:,1) == songIds(i);
+
+    songVotes = votes(mask);
+    songDeltas = groups(mask,2);
+
+    [scores(i), pos] = max(songVotes);
+    bestDeltas(i) = songDeltas(pos);
+end
+
+% 5. Classement des morceaux par score decroissant
+[scores, order] = sort(scores, 'descend');
+
+res.song_id = songIds(order);
+res.score = scores;
+res.delta = bestDeltas(order);
+
+% 6. Score du deuxieme candidat
+if nSongs >= 2
+    res.score2 = scores(2);
+end
 end
