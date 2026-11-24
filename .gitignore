@@ -5,3 +5,13 @@ results/indexes/*.mat
 *.asv
 *.mlapp~
 presentation/*.mp4
+
+# Generated fingerprint index
+results/fingerprint_index.mat
+
+# Temporary experiment outputs
+experiments/results/
+
+# Generated audio queries
+data/queries/calibration/*.wav
+data/queries/evaluation/*.wav

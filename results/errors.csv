@@ -1,0 +1,3 @@
+query_id,file,true_song_id,start_s,duration_s,predicted_song_id,S1,S2,time_s,correct
+16,data/queries/evaluation/query_016.wav,61,22.175,3,0,4,4,0.008056125,0
+41,data/queries/evaluation/query_041.wav,61,17.38075,5,0,18,4,0.0109804583333333,0
