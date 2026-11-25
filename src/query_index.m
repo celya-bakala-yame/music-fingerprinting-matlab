@@ -31,7 +31,9 @@ for i = 1:numel(keys)
     end
 
     % Occurrences de cette empreinte dans la base.
-    occurrences = index.map(key);
+    % Conversion en double : l'index stocke du uint32, et
+    % m_ref - m_query en uint32 saturerait a 0 si negatif.
+    occurrences = double(index.map(key));
 
     % Nombre d'occurrences retrouvees.
     n = size(occurrences, 1);
