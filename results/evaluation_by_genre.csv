@@ -1,0 +1,8 @@
+genre,queries,success,failures,TBD
+Electronic,1,1,0,100
+Experimental,14,12,2,85.7142857142857
+Folk,16,16,0,100
+Hip-Hop,1,1,0,100
+International,13,13,0,100
+Pop,5,5,0,100
+Rock,10,10,0,100
