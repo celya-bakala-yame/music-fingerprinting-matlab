@@ -1,1 +1,101 @@
-song_id,title,artist,duration_s,file,set,source,licence
+song_id,title,artist,duration_s,file,set,source,licence,fma_id,genre
+1,Food,AWOL,29.989,fma_small/000/000002.mp3,reference,Free Music Archive,Attribution-NonCommercial-ShareAlike 3.0 International,2,Hip-Hop
+2,This World,AWOL,30.015,fma_small/000/000005.mp3,reference,Free Music Archive,Attribution-NonCommercial-ShareAlike 3.0 International,5,Hip-Hop
+3,Freeway,Kurt Vile,29.989,fma_small/000/000010.mp3,reference,Free Music Archive,Attribution-NonCommercial-NoDerivatives (aka Music Sharing) 3.0 International,10,Pop
+4,Queen Of The Wires,Alec K. Redfearn & the Eyesores,29.989,fma_small/000/000140.mp3,reference,Free Music Archive,Attribution-Noncommercial-No Derivative Works 3.0 United States,140,Folk
+5,Ohio,Alec K. Redfearn & the Eyesores,29.989,fma_small/000/000141.mp3,reference,Free Music Archive,Attribution-Noncommercial-No Derivative Works 3.0 United States,141,Folk
+6,Blackout 2,Contradiction,29.989,fma_small/000/000148.mp3,reference,Free Music Archive,Attribution-Noncommercial-Share Alike 3.0 United States,148,Experimental
+7,Jules Lost His Jewels,Ariel Pink's Haunted Graffiti,30.015,fma_small/000/000182.mp3,reference,Free Music Archive,Attribution-Noncommercial-No Derivative Works 3.0 United States,182,Rock
+8,Castle Of Stars,Ed Askew,30.015,fma_small/000/000190.mp3,reference,Free Music Archive,Attribution-NonCommercial-ShareAlike 3.0 International,190,Folk
+9,Here With You,Ed Askew,29.989,fma_small/000/000193.mp3,reference,Free Music Archive,Attribution-NonCommercial-ShareAlike 3.0 International,193,Folk
+10,All I want to Do,Ed Askew,30.015,fma_small/000/000194.mp3,reference,Free Music Archive,Attribution-NonCommercial-ShareAlike 3.0 International,194,Folk
+11,Piano 2,Ed Askew,29.989,fma_small/000/000197.mp3,reference,Free Music Archive,Attribution-NonCommercial-ShareAlike 3.0 International,197,Folk
+12,Baby Come Home,Ed Askew,29.989,fma_small/000/000200.mp3,reference,Free Music Archive,Attribution-NonCommercial-ShareAlike 3.0 International,200,Folk
+13,Song For R,Ed Askew,29.989,fma_small/000/000203.mp3,reference,Free Music Archive,Attribution-NonCommercial-ShareAlike 3.0 International,203,Folk
+14,My Dream,Ed Askew,29.989,fma_small/000/000204.mp3,reference,Free Music Archive,Attribution-NonCommercial-ShareAlike 3.0 International,204,Folk
+15,Piano 3,Ed Askew,29.989,fma_small/000/000207.mp3,reference,Free Music Archive,Attribution-NonCommercial-ShareAlike 3.0 International,207,Folk
+16,In the French Court,Ed Askew,30.015,fma_small/000/000210.mp3,reference,Free Music Archive,Attribution-NonCommercial-ShareAlike 3.0 International,210,Folk
+17,In America,Ed Askew,29.989,fma_small/000/000211.mp3,reference,Free Music Archive,Attribution-NonCommercial-ShareAlike 3.0 International,211,Folk
+18,When I Arive,Ed Askew,29.989,fma_small/000/000212.mp3,reference,Free Music Archive,Attribution-NonCommercial-ShareAlike 3.0 International,212,Folk
+19,Boute,Au,29.989,fma_small/000/000213.mp3,reference,Free Music Archive,Attribution-NonCommercial-ShareAlike 3.0 International,213,Pop
+20,We Want to be Old,Bird Names,29.989,fma_small/000/000255.mp3,reference,Free Music Archive,Attribution-Noncommercial-Share Alike 3.0 United States,255,Rock
+21,Toggle,Black Elk,29.989,fma_small/000/000256.mp3,reference,Free Music Archive,Attribution-NonCommercial-ShareAlike 3.0 International,256,Rock
+22,Vampires,Blah Blah Blah,29.989,fma_small/000/000368.mp3,reference,Free Music Archive,Attribution-Noncommercial-No Derivative Works 2.0 UK: England ,368,Rock
+23,The Ambient Honky,Brian Joseph Davis,29.989,fma_small/000/000424.mp3,reference,Free Music Archive,Attribution-NonCommercial-ShareAlike 3.0 International,424,Experimental
+24,Machines and Muscles,CAVE,30.015,fma_small/000/000459.mp3,reference,Free Music Archive,Attribution-NonCommercial-ShareAlike 3.0 International,459,Rock
+25,I Can See You,Charles Manson,29.989,fma_small/000/000534.mp3,reference,Free Music Archive,Attribution-Noncommercial-Share Alike 3.0 United States,534,Folk
+26,The Black Pirate,Charles Manson,29.989,fma_small/000/000540.mp3,reference,Free Music Archive,Attribution-Noncommercial-Share Alike 3.0 United States,540,Folk
+27,If You Have No One,Charles Manson,29.989,fma_small/000/000546.mp3,reference,Free Music Archive,Attribution-Noncommercial-Share Alike 3.0 United States,546,Folk
+28,Caliente Queen,Clockcleaner,29.989,fma_small/000/000574.mp3,reference,Free Music Archive,Attribution-NonCommercial-ShareAlike 3.0 International,574,Rock
+29,Disappearing,Dora Bleu,29.989,fma_small/000/000602.mp3,reference,Free Music Archive,Attribution-NonCommercial-ShareAlike 3.0 International,602,Folk
+30,"Immaterial, side A",EKG,30.015,fma_small/000/000615.mp3,reference,Free Music Archive,Attribution-NonCommercial-ShareAlike 3.0 International,615,Experimental
+31,Arabesque,Ed Askew,29.989,fma_small/000/000620.mp3,reference,Free Music Archive,Attribution-NonCommercial-ShareAlike 3.0 International,620,Folk
+32,Blue Eyed Baby,Ed Askew,29.989,fma_small/000/000621.mp3,reference,Free Music Archive,Attribution-NonCommercial-ShareAlike 3.0 International,621,Folk
+33,Climbing To The Top,Ed Askew,30.015,fma_small/000/000625.mp3,reference,Free Music Archive,Attribution-NonCommercial-ShareAlike 3.0 International,625,Folk
+34,Heat,Explode Into Colors,30.015,fma_small/000/000666.mp3,reference,Free Music Archive,Attribution-NonCommercial-ShareAlike 3.0 International,666,International
+35,Sharpen The Knife,Explode Into Colors,29.989,fma_small/000/000667.mp3,reference,Free Music Archive,Attribution-NonCommercial-ShareAlike 3.0 International,667,International
+36,The Tension,Fanatic,29.989,fma_small/000/000676.mp3,reference,Free Music Archive,Attribution-NonCommercial-ShareAlike 3.0 International,676,Hip-Hop
+37,Cataclysm,Flying Luttenbachers,29.989,fma_small/000/000690.mp3,reference,Free Music Archive,Attribution-NonCommercial-ShareAlike 3.0 International,690,Rock
+38,Planet Say (featuring Faust),Food For Animals,29.989,fma_small/000/000694.mp3,reference,Free Music Archive,Attribution-NonCommercial-ShareAlike 3.0 International,694,Hip-Hop
+39,Elephants,Food For Animals,29.989,fma_small/000/000695.mp3,reference,Free Music Archive,Attribution-NonCommercial-ShareAlike 3.0 International,695,Hip-Hop
+40,Mano De Dios,Fósforo,29.989,fma_small/000/000704.mp3,reference,Free Music Archive,Attribution-NonCommercial-ShareAlike 3.0 International,704,International
+41,Tio Cocodrilo,Fósforo,29.989,fma_small/000/000705.mp3,reference,Free Music Archive,Attribution-NonCommercial-ShareAlike 3.0 International,705,International
+42,Esto Es Califas,Fósforo,30.015,fma_small/000/000706.mp3,reference,Free Music Archive,Attribution-NonCommercial-ShareAlike 3.0 International,706,International
+43,Cochabamba,Fósforo,29.989,fma_small/000/000707.mp3,reference,Free Music Archive,Attribution-NonCommercial-ShareAlike 3.0 International,707,International
+44,Desconocido,Fósforo,29.989,fma_small/000/000708.mp3,reference,Free Music Archive,Attribution-NonCommercial-ShareAlike 3.0 International,708,International
+45,Cumbia De Obama,Fósforo,30.015,fma_small/000/000709.mp3,reference,Free Music Archive,Attribution-NonCommercial-ShareAlike 3.0 International,709,International
+46,Circle Moon,Fursaxa,29.989,fma_small/000/000714.mp3,reference,Free Music Archive,Attribution-NonCommercial-ShareAlike 3.0 International,714,Folk
+47,Kokopelli,Fursaxa,29.989,fma_small/000/000715.mp3,reference,Free Music Archive,Attribution-NonCommercial-ShareAlike 3.0 International,715,Folk
+48,Saxalainen,Fursaxa,29.989,fma_small/000/000716.mp3,reference,Free Music Archive,Attribution-NonCommercial-ShareAlike 3.0 International,716,Folk
+49,Song Of The Spindle Berry,Fursaxa,30.015,fma_small/000/000718.mp3,reference,Free Music Archive,Attribution-NonCommercial-ShareAlike 3.0 International,718,Folk
+50,Relaxing,Glove Compartment,29.989,fma_small/000/000777.mp3,reference,Free Music Archive,Attribution-NonCommercial-ShareAlike 3.0 International,777,Rock
+51,Motion Passings,Hall Of Fame,29.989,fma_small/000/000814.mp3,reference,Free Music Archive,Attribution-NonCommercial-NoDerivatives (aka Music Sharing) 3.0 International,814,Folk
+52,Sir,Hecuba,30.015,fma_small/000/000821.mp3,reference,Free Music Archive,Attribution-NonCommercial-ShareAlike 3.0 International,821,Pop
+53,Tom & Jerry,Hecuba,29.989,fma_small/000/000822.mp3,reference,Free Music Archive,Attribution-NonCommercial-ShareAlike 3.0 International,822,Pop
+54,Death March,Here Comes A Big Black Cloud!!,29.989,fma_small/000/000825.mp3,reference,Free Music Archive,Attribution-NonCommercial-ShareAlike 3.0 International,825,Rock
+55,Welsinsni Melodyi,Hutzl Ukranian Ensemble,30.015,fma_small/000/000853.mp3,reference,Free Music Archive,Attribution-Noncommercial-Share Alike 3.0 United States,853,International
+56,Softly Tomorrow,Ilyas Ahmed,29.989,fma_small/000/000890.mp3,reference,Free Music Archive,Attribution-NonCommercial-ShareAlike 3.0 International,890,Folk
+57,Phantom Sky,Ilyas Ahmed,29.989,fma_small/000/000892.mp3,reference,Free Music Archive,Attribution-NonCommercial-ShareAlike 3.0 International,892,Folk
+58,02,Infinite Body,29.989,fma_small/000/000897.mp3,reference,Free Music Archive,Attribution-NonCommercial-ShareAlike 3.0 International,897,Experimental
+59,Or So I've Been Told,Jad Fair and Jason Willett,30.015,fma_small/000/000993.mp3,reference,Free Music Archive,Attribution-NonCommercial-ShareAlike 3.0 International,993,Rock
+60,No Good Deed Goes Unpunished,Kevin Shields,30.015,fma_small/000/000995.mp3,reference,Free Music Archive,Attribution-Noncommercial-Share Alike 3.0 United States,995,Experimental
+61,Nothing's Ever Ending,Kevin Shields,30.015,fma_small/000/000997.mp3,reference,Free Music Archive,Attribution-Noncommercial-Share Alike 3.0 United States,997,Experimental
+62,Apparently,Kevin Shields,29.989,fma_small/000/000998.mp3,reference,Free Music Archive,Attribution-Noncommercial-Share Alike 3.0 United States,998,Experimental
+63,13 Monsters,Lightning Bolt,29.989,fma_small/001/001039.mp3,reference,Free Music Archive,Attribution-Noncommercial-Share Alike 3.0 United States,1039,Rock
+64,Dracula Mountain,Lightning Bolt,29.989,fma_small/001/001040.mp3,reference,Free Music Archive,Attribution-Noncommercial-Share Alike 3.0 United States,1040,Rock
+65,Helicopter de Cristal,Lucky Dragons,30.015,fma_small/001/001066.mp3,reference,Free Music Archive,Attribution-Noncommercial-Share Alike 3.0 United States,1066,Experimental
+66,Un Lagrima en la Discoteca,Lucky Dragons,29.989,fma_small/001/001069.mp3,reference,Free Music Archive,Attribution-Noncommercial-Share Alike 3.0 United States,1069,Experimental
+67,Onda Tocadisco,Lucky Dragons,30.015,fma_small/001/001073.mp3,reference,Free Music Archive,Attribution-Noncommercial-Share Alike 3.0 United States,1073,Experimental
+68,Painful Corazon,Lucky Dragons,29.989,fma_small/001/001075.mp3,reference,Free Music Archive,Attribution-Noncommercial-Share Alike 3.0 United States,1075,Experimental
+69,Nam Nhi-tu,M. Nguyen Van Minh-Con,30.015,fma_small/001/001082.mp3,reference,Free Music Archive,Attribution-Noncommercial-Share Alike 3.0 United States,1082,International
+70,Feasting on Energy,Magic Lantern,29.989,fma_small/001/001083.mp3,reference,Free Music Archive,Attribution-Noncommercial-Share Alike 3.0 United States,1083,Experimental
+71,Tell The Police The Truth,Mahjongg,30.015,fma_small/001/001087.mp3,reference,Free Music Archive,Attribution-NonCommercial-ShareAlike 3.0 International,1087,Rock
+72,Rare Vodka from the Fourteenth Century,Mary Halvorson and Weasel Walter,30.015,fma_small/001/001102.mp3,reference,Free Music Archive,Attribution-NonCommercial-ShareAlike 3.0 International,1102,Rock
+73,Wooly Mammoth's Absence,Mount Eerie,30.015,fma_small/001/001193.mp3,reference,Free Music Archive,Attribution-NonCommercial-NoDerivatives (aka Music Sharing) 3.0 International,1193,Folk
+74,With My Hands Out,Mount Eerie,30.015,fma_small/001/001195.mp3,reference,Free Music Archive,Attribution-NonCommercial-NoDerivatives (aka Music Sharing) 3.0 International,1195,Folk
+75,2 Blonde Braids,Mount Eerie,30.015,fma_small/001/001196.mp3,reference,Free Music Archive,Attribution-NonCommercial-NoDerivatives (aka Music Sharing) 3.0 International,1196,Folk
+76,My Burning,Mount Eerie,29.989,fma_small/001/001197.mp3,reference,Free Music Archive,Attribution-NonCommercial-NoDerivatives (aka Music Sharing) 3.0 International,1197,Folk
+77,"""Cleanse Bath"" 10"" Metal Laquer",Nautical Almanac,29.989,fma_small/001/001249.mp3,reference,Free Music Archive,Attribution-Noncommercial-Share Alike 3.0 United States,1249,Experimental
+78,Rolling In The Green,Nautical Almanac,29.989,fma_small/001/001259.mp3,reference,Free Music Archive,Attribution-Noncommercial-Share Alike 3.0 United States,1259,Experimental
+79,Cocksuckerbastardmotherfucker,Necropolis,30.015,fma_small/001/001270.mp3,reference,Free Music Archive,Attribution-Noncommercial-Share Alike 3.0 United States,1270,Rock
+80,Richard Nixon Died Today,Negativland,30.015,fma_small/001/001276.mp3,reference,Free Music Archive,Attribution-NonCommercial-NoDerivatives (aka Music Sharing) 3.0 International,1276,Experimental
+81,No Business,Negativland,29.989,fma_small/001/001277.mp3,reference,Free Music Archive,Attribution-NonCommercial-ShareAlike 3.0 International,1277,Experimental
+82,Downloading,Negativland,30.015,fma_small/001/001278.mp3,reference,Free Music Archive,Attribution-NonCommercial-ShareAlike 3.0 International,1278,Experimental
+83,Guns of Thunder,Pierced Arrows,29.989,fma_small/001/001417.mp3,reference,Free Music Archive,Attribution-NonCommercial-ShareAlike 3.0 International,1417,Rock
+84,I Feel Evils,Plastic Crimewave Sound,30.015,fma_small/001/001427.mp3,reference,Free Music Archive,Attribution-Noncommercial-Share Alike 3.0 United States,1427,Rock
+85,Time Fist,Pocahaunted,29.989,fma_small/001/001443.mp3,reference,Free Music Archive,Attribution-Noncommercial-Share Alike 3.0 United States,1443,Experimental
+86,Reindeer Dance,Rainbro,29.989,fma_small/001/001482.mp3,reference,Free Music Archive,Attribution-Noncommercial-Share Alike 3.0 United States,1482,Electronic
+87,Zombie,Ric Royer &amp; G. Lucas Crane,29.989,fma_small/001/001510.mp3,reference,Free Music Archive,Attribution-Noncommercial-Share Alike 3.0 United States,1510,Experimental
+88,Song of The Stations,Samara Lubelski,30.015,fma_small/001/001544.mp3,reference,Free Music Archive,Attribution-NonCommercial-NoDerivatives (aka Music Sharing) 3.0 International,1544,Folk
+89,Hrz,So Cow,30.0,fma_small/001/001642.mp3,reference,Free Music Archive,Attribution-Noncommercial-Share Alike 3.0 United States,1642,Pop
+90,Outskirts,So Cow,30.0,fma_small/001/001644.mp3,reference,Free Music Archive,Attribution-Noncommercial-Share Alike 3.0 United States,1644,Pop
+91,Inis Meain,So Cow,30.0,fma_small/001/001649.mp3,reference,Free Music Archive,Attribution-Noncommercial-Share Alike 3.0 United States,1649,Pop
+92,Only Fools and Horses Theme,So Cow,30.0,fma_small/001/001661.mp3,reference,Free Music Archive,Attribution-Noncommercial-Share Alike 3.0 United States,1661,Pop
+93,So High,Softboiled Eggies,30.015,fma_small/001/001663.mp3,reference,Free Music Archive,Attribution-Noncommercial-Share Alike 3.0 United States,1663,Pop
+94,She Fell Through the Trees,Softboiled Eggies,29.989,fma_small/001/001666.mp3,reference,Free Music Archive,Attribution-Noncommercial-Share Alike 3.0 United States,1666,Pop
+95,Track 07,Solemn Man,30.015,fma_small/001/001673.mp3,reference,Free Music Archive,Attribution-Noncommercial-Share Alike 3.0 United States,1673,Experimental
+96,Bashraf Salama,The Sounds of Taraab,29.989,fma_small/001/001680.mp3,reference,Free Music Archive,Attribution-Noncommercial-Share Alike 3.0 United States,1680,International
+97,Daka Kozi Manowe,The Sounds of Taraab,29.989,fma_small/001/001681.mp3,reference,Free Music Archive,Attribution-Noncommercial-Share Alike 3.0 United States,1681,International
+98,Nie Zama Nie Sema,The Sounds of Taraab,29.989,fma_small/001/001682.mp3,reference,Free Music Archive,Attribution-Noncommercial-Share Alike 3.0 United States,1682,International
+99,Mapenzi Matamu,The Sounds of Taraab,30.015,fma_small/001/001683.mp3,reference,Free Music Archive,Attribution-Noncommercial-Share Alike 3.0 United States,1683,International
+100,Mahaba Wa Taka Nini,The Sounds of Taraab,29.989,fma_small/001/001684.mp3,reference,Free Music Archive,Attribution-Noncommercial-Share Alike 3.0 United States,1684,International
