@@ -1,0 +1,135 @@
+Début : 26-Nov-2026 13:08:58
+
+===== exp_theory =====
+Q1 : puissance sous 4 kHz : moyenne 0.968, min 0.635, max 1.000
+Q1 : raie repliée à 3 kHz : -64.9 dB avec filtre, -0.4 dB sans filtre
+    <strong>ecart_median_bande_passante_dB</strong>    <strong>ecart_q95_bande_passante_dB</strong>    <strong>ecart_median_pics_dB</strong>    <strong>ecart_q95_pics_dB</strong>    <strong>n_pics</strong>    <strong>pics_conserves_bande_passante</strong>
+    <strong>______________________________</strong>    <strong>___________________________</strong>    <strong>____________________</strong>    <strong>_________________</strong>    <strong>______</strong>    <strong>_____________________________</strong>
+
+               0.56218                          3.1589                     0.088628               0.48884          471                 0.91317           
+
+             <strong>test</strong>              <strong>frac_exacte</strong>    <strong>frac_tol1</strong>
+    <strong>_______________________</strong>    <strong>___________</strong>    <strong>_________</strong>
+
+    {'gain_x0.3'          }            1             1 
+    {'decalage_16_trames' }      0.99485       0.99485 
+    {'decalage_7_trames'  }      0.85769       0.85769 
+    {'decalage_demi_trame'}      0.38819       0.83417 
+
+OK exp_theory (10.1 s)
+
+===== exp_survival =====
+Chargement de l'index...
+Survie : requête 1/60
+Survie : requête 2/60
+Survie : requête 3/60
+Survie : requête 4/60
+Survie : requête 5/60
+Survie : requête 6/60
+Survie : requête 7/60
+Survie : requête 8/60
+Survie : requête 9/60
+Survie : requête 10/60
+Survie : requête 11/60
+Survie : requête 12/60
+Survie : requête 13/60
+Survie : requête 14/60
+Survie : requête 15/60
+Survie : requête 16/60
+Survie : requête 17/60
+Survie : requête 18/60
+Survie : requête 19/60
+Survie : requête 20/60
+Survie : requête 21/60
+Survie : requête 22/60
+Survie : requête 23/60
+Survie : requête 24/60
+Survie : requête 25/60
+Survie : requête 26/60
+Survie : requête 27/60
+Survie : requête 28/60
+Survie : requête 29/60
+Survie : requête 30/60
+Survie : requête 31/60
+Survie : requête 32/60
+Survie : requête 33/60
+Survie : requête 34/60
+Survie : requête 35/60
+Survie : requête 36/60
+Survie : requête 37/60
+Survie : requête 38/60
+Survie : requête 39/60
+Survie : requête 40/60
+Survie : requête 41/60
+Survie : requête 42/60
+Survie : requête 43/60
+Survie : requête 44/60
+Survie : requête 45/60
+Survie : requête 46/60
+Survie : requête 47/60
+Survie : requête 48/60
+Survie : requête 49/60
+Survie : requête 50/60
+Survie : requête 51/60
+Survie : requête 52/60
+Survie : requête 53/60
+Survie : requête 54/60
+Survie : requête 55/60
+Survie : requête 56/60
+Survie : requête 57/60
+Survie : requête 58/60
+Survie : requête 59/60
+Survie : requête 60/60
+    <strong>dm</strong>    <strong>dk</strong>    <strong>pics_bande_s</strong>     <strong>rho</strong>      <strong>p_exact</strong>    <strong>p_tol1</strong>     <strong>rho_p2_exact</strong>    <strong>rho_p2_tol1</strong>
+    <strong>__</strong>    <strong>__</strong>    <strong>____________</strong>    <strong>______</strong>    <strong>_______</strong>    <strong>_______</strong>    <strong>____________</strong>    <strong>___________</strong>
+
+    1      2         5           29.94    0.67117    0.77991       13.487         18.211   
+    2      3         5           28.98    0.64784    0.76105       12.163         16.785   
+    3      5         5          26.205    0.61992    0.73372       10.071         14.107   
+    3      8         5          23.915    0.61329    0.72428       8.9952         12.545   
+    5      8         5          20.425    0.57629    0.68818       6.7834         9.6732   
+    5     12         5          17.205    0.55291    0.65999       5.2598         7.4944   
+    3      5         3           17.07    0.66963    0.77021       7.6542         10.126   
+    3      5         8          36.895    0.56294    0.69331       11.692         17.735   
+
+OK exp_survival (31.7 s)
+
+===== exp_gamma =====
+gamma=1 bruit_10dB : identification 100.0 %, parasites mesurés 3079
+gamma=1 mp3_64 : identification 98.3 %, parasites mesurés 3036
+gamma=2 bruit_10dB : identification 100.0 %, parasites mesurés 10022
+gamma=2 mp3_64 : identification 100.0 %, parasites mesurés 9781
+gamma=4 bruit_10dB : identification 100.0 %, parasites mesurés 34640
+gamma=4 mp3_64 : identification 100.0 %, parasites mesurés 33264
+gamma=8 bruit_10dB : identification 98.3 %, parasites mesurés 126502
+gamma=8 mp3_64 : identification 98.3 %, parasites mesurés 121585
+    <strong>gamma_f</strong>      <strong>condition</strong>           <strong>M</strong>             <strong>Nu</strong>        <strong>cles_distinctes</strong>    <strong>nq_moyen</strong>    <strong>parasites_attendus</strong>    <strong>parasites_mesures</strong>    <strong>s_vrai_moyen</strong>    <strong>s_meilleur_faux_positives</strong>    <strong>s1_moyen_negatives</strong>    <strong>s1_max_negatives</strong>    <strong>identification_rang1_pct</strong>    <strong>TBD_seuil_pct</strong>    <strong>TFD_seuil_pct</strong>    <strong>seuil</strong>
+    <strong>_______</strong>    <strong>______________</strong>    <strong>__________</strong>    <strong>__________</strong>    <strong>_______________</strong>    <strong>________</strong>    <strong>__________________</strong>    <strong>_________________</strong>    <strong>____________</strong>    <strong>_________________________</strong>    <strong>__________________</strong>    <strong>________________</strong>    <strong>________________________</strong>    <strong>_____________</strong>    <strong>_____________</strong>    <strong>_____</strong>
+
+       1       {'bruit_10dB'}    7.8951e+06    7.0165e+05        387668          1284.8           114.18                 3079.2           223.52                7.4667                    8.0833                 17                       100                96.667                0         22  
+       1       {'mp3_64'    }    7.8951e+06    7.0165e+05        387668          1277.8           113.56                 3036.2           359.55                7.4167                    7.9667                 15                    98.333                98.333                0         22  
+       2       {'bruit_10dB'}    1.9815e+06    7.0165e+05        208553          1284.8           454.94                  10022           255.12                11.267                    11.817                 24                       100                96.667           3.3333         22  
+       2       {'mp3_64'    }    1.9815e+06    7.0165e+05        208553          1277.8           452.47                 9781.1           391.42                11.667                    11.833                 19                       100                98.333                0         22  
+       4       {'bruit_10dB'}    4.9923e+05    7.0165e+05         79529          1284.8           1805.7                  34640           279.38                16.817                    17.767                 27                       100                96.667           18.333         22  
+       4       {'mp3_64'    }    4.9923e+05    7.0165e+05         79529          1277.8           1795.9                  33264           412.23                17.817                      18.1                 29                       100                98.333           23.333         22  
+       8       {'bruit_10dB'}    1.2675e+05    7.0165e+05         24082          1284.8             7112              1.265e+05           299.53                30.317                    30.167                 46                    98.333                98.333           98.333         22  
+       8       {'mp3_64'    }    1.2675e+05    7.0165e+05         24082          1277.8           7073.4             1.2159e+05           431.33                  30.5                    31.017                 45                    98.333                98.333           91.667         22  
+
+OK exp_gamma (31.3 s)
+
+===== exp_index_cost =====
+N=10 : 68913 entrées, 7.9 Mo, recherche 2.14 ms
+N=25 : 174657 entrées, 17.1 Mo, recherche 2.90 ms
+N=50 : 349322 entrées, 31.7 Mo, recherche 4.60 ms
+N=100 : 701652 entrées, 55.1 Mo, recherche 6.97 ms
+    <strong>n_morceaux</strong>    <strong>temps_construction_s</strong>    <strong>Nu_entrees</strong>    <strong>cles_distinctes</strong>    <strong>taille_serialisee_Mo</strong>    <strong>recherche_moy_ms</strong>    <strong>recherche_med_ms</strong>    <strong>extraction_moy_ms</strong>    <strong>total_moy_ms</strong>
+    <strong>__________</strong>    <strong>____________________</strong>    <strong>__________</strong>    <strong>_______________</strong>    <strong>____________________</strong>    <strong>________________</strong>    <strong>________________</strong>    <strong>_________________</strong>    <strong>____________</strong>
+
+        10               1.1363                68913           59422              7.8535                2.1377              1.7938              4.8834             7.0211   
+        25               2.9331           1.7466e+05      1.2605e+05              17.092                2.8985              2.4726              4.8834             7.7818   
+        50               6.0203           3.4932e+05      2.3066e+05              31.729                4.6032              4.1947              4.8834             9.4866   
+       100               12.598           7.0165e+05      3.8767e+05              55.073                6.9737              6.3945              4.8834             11.857   
+
+OK exp_index_cost (26.1 s)
+
+Terminé en 1.7 min

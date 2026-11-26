@@ -1,0 +1,6 @@
+test,reussi,echec
+test_hashes/testDeterminism,1,0
+test_hashes/testTranslation,1,0
+test_hashes/testSharedKeyTwoOccurrences,1,0
+test_hashes/testIndexedSongFound,1,0
+test_hashes/testKeyRangeAndDecoding,1,0

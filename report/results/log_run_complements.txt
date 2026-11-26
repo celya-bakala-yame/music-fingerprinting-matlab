@@ -1,0 +1,70 @@
+Début : 26-Nov-2026 13:36:53
+Pics calculés.
+Scores de la version évaluée calculés.
+Running test_hashes
+
+================================================================================
+<strong>Error occurred while setting up or tearing down test_hashes.
+As a result, all test_hashes tests failed and did not run to completion.</strong>
+    ---------
+    Error ID:
+    ---------
+    'MATLAB:UndefinedFunction'
+    --------------
+    Error Details:
+    --------------
+    Unrecognized function or variable 'config'.
+    
+    Error in <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('test_hashes>setupOnce', '/Users/celyabakala-yame/Projects/music-fingerprinting-matlab/report/experiments/thomas_branch/tests/test_hashes.m', 12)" style="font-weight:bold">test_hashes>setupOnce</a> (<a href="matlab: opentoline('/Users/celyabakala-yame/Projects/music-fingerprinting-matlab/report/experiments/thomas_branch/tests/test_hashes.m',12,0)">line 12</a>)
+    cfg = config();
+          ^^^^^^^^
+================================================================================
+
+Done test_hashes
+__________
+
+Failure Summary:
+
+     Name                                     Failed  Incomplete  Reason(s)
+    ========================================================================
+     test_hashes/testDeterminism                X         X       Errored.
+    ------------------------------------------------------------------------
+     test_hashes/testTranslation                X         X       Errored.
+    ------------------------------------------------------------------------
+     test_hashes/testSharedKeyTwoOccurrences    X         X       Errored.
+    ------------------------------------------------------------------------
+     test_hashes/testIndexedSongFound           X         X       Errored.
+    ------------------------------------------------------------------------
+     test_hashes/testKeyRangeAndDecoding        X         X       Errored.
+                       <strong>test</strong>                        <strong>reussi</strong>    <strong>echec</strong>
+    <strong>___________________________________________</strong>    <strong>______</strong>    <strong>_____</strong>
+
+    {'test_hashes/testDeterminism'            }    false     true 
+    {'test_hashes/testTranslation'            }    false     true 
+    {'test_hashes/testSharedKeyTwoOccurrences'}    false     true 
+    {'test_hashes/testIndexedSongFound'       }    false     true 
+    {'test_hashes/testKeyRangeAndDecoding'    }    false     true 
+
+    <strong>morceaux_paires_identiques</strong>    <strong>n_morceaux</strong>    <strong>requetes_scores_identiques</strong>    <strong>n_requetes</strong>    <strong>requetes_appariements_v1_v2_identiques</strong>    <strong>n_req</strong>        <strong>Nu</strong>        <strong>cles_distinctes</strong>    <strong>assemblage_s</strong>    <strong>map_serialise_Mo</strong>    <strong>tableaux_tries_Mo</strong>    <strong>recherche_map_ms</strong>    <strong>recherche_v2_ms</strong>
+    <strong>__________________________</strong>    <strong>__________</strong>    <strong>__________________________</strong>    <strong>__________</strong>    <strong>______________________________________</strong>    <strong>_____</strong>    <strong>__________</strong>    <strong>_______________</strong>    <strong>____________</strong>    <strong>________________</strong>    <strong>_________________</strong>    <strong>________________</strong>    <strong>_______________</strong>
+
+               100                   100                   240                   240                         240                       240     7.0165e+05      3.8767e+05          1.9188            46.762              12.467               8.9572             0.87351    
+
+F = 4 : Nu = 303022, TBD = 78.3 %
+F = 8 : Nu = 582537, TBD = 93.3 %
+F = 10 : Nu = 701652, TBD = 96.7 %
+F = 12 : Nu = 805516, TBD = 98.3 %
+F = 16 : Nu = 976697, TBD = 98.3 %
+    <strong>F</strong>         <strong>Nu</strong>        <strong>nq_moyen</strong>    <strong>s_vrai_moyen</strong>    <strong>s_meilleur_faux_pos</strong>    <strong>s1_max_negatives</strong>    <strong>identification_pct</strong>    <strong>TBD_seuil_pct</strong>    <strong>TFD_seuil_pct</strong>
+    <strong>__</strong>    <strong>__________</strong>    <strong>________</strong>    <strong>____________</strong>    <strong>___________________</strong>    <strong>________________</strong>    <strong>__________________</strong>    <strong>_____________</strong>    <strong>_____________</strong>
+
+     4    3.0302e+05     580.03        91.333                4.2                   9                 98.333             78.333                0    
+     8    5.8254e+05     1079.6        183.17             6.5167                  15                 98.333             93.333                0    
+    10    7.0165e+05     1284.8        223.52             7.4667                  17                    100             96.667                0    
+    12    8.0552e+05     1460.8        259.47               8.25                  19                    100             98.333                0    
+    16     9.767e+05     1750.5        321.03                9.9                  23                    100             98.333           3.3333    
+
+Collisions : 1 % des clés portent 7.5 % des entrées
+OK exp_complements
+
+Terminé en 0.7 min
